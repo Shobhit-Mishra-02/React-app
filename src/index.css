@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --dark-black: #0b0b0e;
+  --text-white: #fff;
+  --text-gray: #d4d4d9;
+  --primary-color: #f55e41;
+}
+
+/* Responsive design  */
+
+/* sm devices  */
+@media (min-width: 640px) {
+}
+
+/* md devices  */
+@media (min-width: 768px) {
+}
+
+/* lg devices  */
+@media (min-width: 1024px) {
+}
+
+/* xl devices  */
+@media (min-width: 1280px) {
+}
+
+/* 2xl devices */
+@media (min-width: 1536px) {
+}

@@ -1,0 +1,98 @@
+.services-section {
+  padding: 6rem 0rem;
+}
+
+.service-heading {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.service-card {
+  border: 1px solid hsla(0, 0%, 74%, 0.356);
+  border-radius: 5px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  height: auto;
+  width: 300px;
+  padding: 1.1rem 1rem;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.service-card img {
+  height: auto;
+  width: 4rem;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  color: rgb(50, 50, 50);
+}
+
+.service-card p {
+  color: rgb(69, 69, 69);
+}
+
+.service-cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.service-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 8rem 0rem 4rem;
+  width: 100%;
+}
+
+.service-banner img {
+  height: auto;
+  width: 100%;
+}
+
+/* sm devices  */
+@media (min-width: 640px) {
+  .services-section {
+    padding: 6rem 1rem;
+  }
+}
+
+/* md devices  */
+@media (min-width: 768px) {
+  .services-section {
+    padding: 8rem 2rem;
+  }
+}
+
+/* lg devices  */
+@media (min-width: 1024px) {
+  .services-section {
+    padding: 10rem 4rem;
+  }
+
+  .service-cards-section {
+    gap: 2.4rem;
+  }
+
+  .service-heading {
+    font-size: 2.4rem;
+  }
+
+  .service-banner img {
+    width: 90%;
+  }
+
+  .service-banner {
+    padding-top: 12rem;
+  }
+}
