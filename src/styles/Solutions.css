@@ -1,0 +1,132 @@
+.solutions-section {
+  padding: 4rem 0rem;
+}
+
+.solutions-heading {
+  background-image: url("/public/Frame\ 138.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0rem;
+}
+
+.solutions-heading span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9f9fac;
+}
+
+.solutions-heading h2 {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px;
+
+  letter-spacing: -0.01em;
+  color: #0b0b0e;
+}
+
+.card {
+  max-width: 510px;
+  height: 304px;
+  border: 1px solid #0b0b0e;
+  position: relative;
+  margin-bottom: 14rem;
+  background-color: #fff;
+}
+
+.card h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.0051em;
+  padding: 0rem 0.5rem;
+}
+
+.card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  letter-spacing: -0.02em;
+
+  padding: 0rem 0.5rem;
+  color: #595969;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 223px;
+}
+
+.image-container img {
+  height: auto;
+  width: 95%;
+  cursor: pointer;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+  top: -14px;
+}
+
+/* sm devices  */
+@media (min-width: 640px) {
+  .solutions-section {
+    padding: 4rem 1rem;
+  }
+
+  .solutions-heading {
+    padding: 6rem 2rem;
+  }
+
+  .card-section {
+    top: -64px;
+  }
+}
+
+/* md devices  */
+@media (min-width: 768px) {
+  .solutions-section {
+    padding: 4rem 2rem;
+  }
+
+  .solutions-heading span,
+  .solutions-heading h2 {
+    width: 480px;
+  }
+}
+
+/* lg devices  */
+@media (min-width: 1024px) {
+  .solutions-section {
+    padding: 4rem 4rem;
+  }
+  .solutions-heading {
+    padding: 6rem 2rem 8rem;
+  }
+  .card-section {
+    gap: 3.4rem;
+  }
+
+  .card-section {
+    top: -82px;
+  }
+}

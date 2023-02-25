@@ -9,13 +9,12 @@
 }
 
 .service-card {
-  border: 1px solid hsla(0, 0%, 74%, 0.356);
-  border-radius: 5px;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  height: auto;
-  width: 300px;
+  width: 340px;
+  height: 240px;
+  border: 1px solid #e9e9ec;
   padding: 1.1rem 1rem;
   cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .service-card:hover {

@@ -1,7 +1,9 @@
+import Brand from "./components/Brand";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
-import Brand from "./components/Brand";
+import Projects from "./components/Projects";
 import Services from "./components/Services";
+import Solutions from "./components/Solutions";
 import "./styles/App.css";
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
       </div>
 
       <Services />
+
+      <Solutions />
+
+      <Projects />
     </div>
   );
 }
