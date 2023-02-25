@@ -28,6 +28,43 @@ const Services = () => {
       <div className="service-banner">
         <img src="/Frame 94.png" alt="service banner" />
       </div>
+
+      <div className="service-bottom">
+        <div className="service-bottom-left">
+          <h2>
+            We'll help <span>build</span> your dream properties
+          </h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius enim
+            aut expedita error est excepturi quas ex sequi maxime facere
+            dolorem, ducimus officiis quaerat ratione soluta repellat. Nisi,
+            dolore odit!
+          </p>
+
+          <div className="service-bottom-container">
+            <button className="service-bottom-btn">Get in touch</button>
+          </div>
+
+          <div className="service-bottom-num">
+            <div className="service-bottom-num-box">
+              <span className="number">
+                2.75<span className="service-color">X</span>
+              </span>
+
+              <span className="desc">Description here</span>
+            </div>
+            <div className="service-bottom-num-box">
+              <span className="number">
+                80.5<span className="service-color">%</span>
+              </span>
+              <span className="desc">Description here</span>
+            </div>
+          </div>
+        </div>
+        <div className="service-bottom-right">
+          <img src="/Rectangle 10.png" alt="image" />
+        </div>
+      </div>
     </div>
   );
 };
