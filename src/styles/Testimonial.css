@@ -1,0 +1,127 @@
+.testimonial-section {
+  padding: 6rem 0rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.testimonial-content {
+  max-width: 396px;
+}
+
+.testimonial-container {
+  max-width: 396px;
+}
+
+.testimonial-content h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #9f9fac;
+}
+
+.testimonial-content h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  letter-spacing: -0.0051em;
+
+  color: #0b0b0e;
+}
+
+.testimonial-btn-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2.5rem;
+  border: 1px solid #e9e9ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left-arrow svg,
+.right-arrow svg {
+  width: 1.5rem;
+  height: auto;
+}
+
+.testimonial-card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: -0.01em;
+
+  color: #3d3d48;
+}
+
+.testimonial-auth {
+  display: flex;
+  column-gap: 1.5rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.testimonial-auth-name h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  letter-spacing: -0.00375em;
+
+  color: #0b0b0e;
+  margin: 0px;
+}
+
+.testimonial-auth-name span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #595969;
+}
+
+/* sm devices  */
+@media (min-width: 640px) {
+  .testimonial-section {
+    padding: 8rem 1rem;
+  }
+}
+
+/* md devices  */
+@media (min-width: 768px) {
+  .testimonial-section {
+    padding: 8rem 2rem;
+  }
+}
+
+/* lg devices  */
+@media (min-width: 1024px) {
+  .testimonial-section {
+    padding: 8rem 4rem;
+  }
+}

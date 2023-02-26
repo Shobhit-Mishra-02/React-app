@@ -94,7 +94,7 @@
   }
 
   .solutions-heading {
-    padding: 6rem 2rem;
+    padding: 6rem 1rem;
   }
 
   .card-section {
@@ -112,6 +112,10 @@
   .solutions-heading h2 {
     width: 480px;
   }
+
+  .solutions-heading {
+    padding: 6rem 2rem;
+  }
 }
 
 /* lg devices  */
@@ -120,7 +124,7 @@
     padding: 4rem 4rem;
   }
   .solutions-heading {
-    padding: 6rem 2rem 8rem;
+    padding: 6rem 4rem 8rem;
   }
   .card-section {
     gap: 3.4rem;

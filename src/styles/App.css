@@ -5,3 +5,12 @@
   background-position: center;
   background-size: cover;
 }
+
+.contact {
+  background-image: url("/public/Section.png");
+  padding: 96px 0rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 6rem;
+}
