@@ -1,25 +1,38 @@
 import "../styles/Testimonial.css";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
-const Card = () => (
+const Card = ({ para, name, post }) => (
   <div className="testimonial-card">
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
-      suscipit aperiam perspiciatis asperiores ab eveniet similique consequuntur
-      id. Aut, deleniti error tenetur suscipit officia consectetur fugiat
-      quibusdam accusantium libero animi.
-    </p>
+    <p>{para}</p>
     <div className="testimonial-auth">
       <img src="/image 7.png" alt="avatar" />
       <div className="testimonial-auth-name">
-        <h3>James Smith</h3>
-        <span>Designer @flowbase.co</span>
+        <h3>{name}</h3>
+        <span>{post}</span>
       </div>
     </div>
   </div>
 );
 
 const Testimonial = () => {
+  const testimonials = [
+    {
+      para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
+      name: "James Smith1",
+      post: "Designer @flowbase.co",
+    },
+    // {
+    //   para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
+    //   name: "James Smith2",
+    //   post: "Designer @flowbase.co",
+    // },
+    // {
+    //   para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
+    //   name: "James Smith3",
+    //   post: "Designer @flowbase.co",
+    // },
+  ];
+
   return (
     <div className="testimonial-section">
       <div className="testimonial-content">
@@ -37,7 +50,14 @@ const Testimonial = () => {
 
       <div className="testimonial-container">
         <div className="testimonial-window">
-          <Card />
+          {testimonials.map((testimonial) => (
+            <Card
+              para={testimonial.para}
+              name={testimonial.name}
+              post={testimonial.post}
+            />
+          ))}
+          {/* <Card /> */}
         </div>
       </div>
     </div>

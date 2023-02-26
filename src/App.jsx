@@ -22,7 +22,7 @@ function App() {
         <Brand />
       </div>
 
-      <Services />
+      {/* <Services /> */}
 
       <Solutions />
 

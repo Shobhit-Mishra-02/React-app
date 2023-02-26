@@ -24,7 +24,9 @@ const Footer = () => {
           © All Rights Reserved. Template by Flowbase. Powered by Webflow
         </div>
         <div className="lower-footer-right">
-          © All Rights Reserved. Template by Flowbase. Powered by Webflow
+          <li>Footer link</li>
+          <li>Footer link</li>
+          <li>Footer link</li>
         </div>
       </div>
     </div>

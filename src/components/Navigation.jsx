@@ -38,7 +38,7 @@ const Navigation = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="menu">
+        <div className="menu scale-up-center scale-out-center">
           <ul className="menu-options">
             <li>Home</li>
             <li>Company</li>
