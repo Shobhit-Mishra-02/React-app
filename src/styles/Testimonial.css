@@ -4,14 +4,10 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .testimonial-content {
-  max-width: 396px;
-}
-
-.testimonial-container {
   max-width: 396px;
 }
 
@@ -103,6 +99,22 @@
   text-transform: uppercase;
 
   color: #595969;
+}
+
+.testimonial-container {
+  max-width: 396px;
+  overflow: hidden;
+}
+
+.testimonial-window {
+  display: flex;
+  position: relative;
+  transition: all ease 1s;
+}
+
+.testimonial-window div {
+  width: 396px;
+  height: inherit;
 }
 
 /* sm devices  */

@@ -1,5 +1,6 @@
 import "../styles/Testimonial.css";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import { useState } from "react";
 
 const Card = ({ para, name, post }) => (
   <div className="testimonial-card">
@@ -14,24 +15,36 @@ const Card = ({ para, name, post }) => (
   </div>
 );
 
+const testimonials = [
+  {
+    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
+    name: "James Smith1",
+    post: "Designer @flowbase.co",
+  },
+  {
+    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
+    name: "James Smith2",
+    post: "Designer @flowbase.co",
+  },
+  {
+    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
+    name: "James Smith3",
+    post: "Designer @flowbase.co",
+  },
+];
+
 const Testimonial = () => {
-  const testimonials = [
-    {
-      para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
-      name: "James Smith1",
-      post: "Designer @flowbase.co",
-    },
-    // {
-    //   para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
-    //   name: "James Smith2",
-    //   post: "Designer @flowbase.co",
-    // },
-    // {
-    //   para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturisuscipit aperiam perspiciatis asperiores ab eveniet similique consequunturid. Aut, deleniti error tenetur suscipit officia consectetur fugiatquibusdam accusantium libero animi.",
-    //   name: "James Smith3",
-    //   post: "Designer @flowbase.co",
-    // },
-  ];
+  const [slide, setSlide] = useState(0);
+
+  const prev = () => {
+    if (slide > 0) setSlide(slide - 1);
+    else setSlide(testimonials.length - 1);
+  };
+
+  const next = () => {
+    if (slide < testimonials.length - 1) setSlide(slide + 1);
+    else setSlide(0);
+  };
 
   return (
     <div className="testimonial-section">
@@ -39,25 +52,28 @@ const Testimonial = () => {
         <h3>testimonials</h3>
         <h2>What our clients have been saying about us.</h2>
         <div className="testimonial-btn-container">
-          <div className="left-arrow">
+          <div onClick={prev} className="left-arrow">
             <BiLeftArrowAlt />
           </div>
-          <div className="right-arrow">
+          <div onClick={next} className="right-arrow">
             <BiRightArrowAlt />
           </div>
         </div>
       </div>
 
       <div className="testimonial-container">
-        <div className="testimonial-window">
+        <div
+          style={{ transform: `translateX(-${slide * 100}%)` }}
+          className="testimonial-window"
+        >
           {testimonials.map((testimonial) => (
             <Card
               para={testimonial.para}
               name={testimonial.name}
               post={testimonial.post}
+              key={testimonial.name}
             />
           ))}
-          {/* <Card /> */}
         </div>
       </div>
     </div>
